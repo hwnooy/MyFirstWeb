@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      table{
+        position:absolute;
+        left:500px;
+        top:200px;
+        width:800px; height:300px;
+      }
+      th{
+        colspan="2";
+        text-align:center;
+      }
+      form{
+        position: absolute;
+        left:20px;
+        top:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center; color:skyblue"><strong>오늘은 비오는 날에 외출하시나 봅니다.</strong></h1>
+    <h2 style="text-align:center; color:skyblue"><strong>아래 원하는 느낌의 느낌의 옷을 눌러보세요!</strong></h2>
+    <h3 style="text-align:center; color:skyblue">TIP! 비가 올 때는 우울한 생각을 할 수 도 있기에, <strong>밝은 컬러</strong>를 입는 것이 좋다고 합니다.</h3>
+
+    <table border-color:blue; border="2" >
+      <th style="width:400px; height:50px;">센스 있는 컬러감!</th>
+      <th style="width:300px; height:50px;">비가 내리는 날 느낌이 나는 옷!</th>
+      <tr>
+        <td><a href="rain1.html"><img src="rain1.jpg" style="position:center"></a></td>
+        <td><a href="rain2.html"><img src="rain3.jpg" style="position:center"></a></td>
+      </tr>
+    </table>
+    <form>
+      <button type="button" onclick=location.replace('whether.html')>날씨 고르러 가기</button>
+      <button type="button" onclick=location.replace('whether.html')>한 번 뒤로 가기</button>
+      <button type="button" onclick=location.replace('MyWebFinal.html')>홈으로 가기</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>해당되는 사항 클릭 후, 사이즈 확인 버튼을 누르면 당신의 사이즈가 나옵니다.</h3>
+    <form>
+      소매기장: <input id="1" type="radio" name="소매기장" value="1"/>~60.9
+      <input type="radio" name="소매기장" value="2"/>60.9~62.2
+      <input type="radio" name="소매기장" value="3"/>62.2~63.5
+      <input type="radio" name="소매기장" value="4"/>63.5~64.7
+      <input type="radio" name="소매기장" value="5"/>64.7~66
+      <input type="radio" name="소매기장" value="6"/>66~67.3
+    </form>
+
+    <form>
+      가슴너비: <input id="2" type="radio" name="가슴너비" value="1"/>~50.8
+      <input type="radio" name="가슴너비" value="2"/>~50.8~53
+      <input type="radio" name="가슴너비" value="3"/>53~55.8
+      <input type="radio" name="가슴너비" value="4"/>55.8~58.4
+      <input type="radio" name="가슴너비" value="5"/>58,4~61
+      <input type="radio" name="가슴너비" value="6"/>61~63.5
+    </form>
+
+    <form>
+      총기장: <input id="3" type="radio" name="총기장" value="1"/>~63.5
+      <input type="radio" name="총기장" value="2"/>63.5~66
+      <input type="radio" name="총기장" value="3"/>66~68.5
+      <input type="radio" name="총기장" value="4"/>68.5~71
+      <input type="radio" name="총기장" value="5"/>71~73.6
+      <input type="radio" name="총기장" value="6"/>73.6~76.7
+    </form>
+
+    <p><button type='button' id='size' type="text" name="size" onclick="final_size()">당신의 사이즈</button></p>
+
+    <script>
+      var target1 =document.getElementByid('1').value;
+      var target2 =document.getElementByid('2').value;
+      var target3 =document.getElementByid('3').value;
+
+      function size(){
+        if (target1=1){
+          document.write('S');
+        }
+        else if(target1=2){
+          document.write('M');
+        }
+        else if(target1=3){
+          document.write('L');
+        }
+        else if(target1=4){
+          document.write('Xl');
+        }
+        else if(target1=5){
+          document.write('2Xl');
+        }
+        else if(target1=6){
+          document.write('3Xl');
+        }
+      }
+
+      function final_size(){
+        if(document.getElementById('1').value=1) size();
+        else if(document.getElementById('2').value=2) size();
+        else if(document.getElementById('3').value=3) size();
+      }
+
+    </script>
+    <button type="button" onclick=location.replace('MyWebFinal.html')>홈으로 가기</button>
+  </body>
+</html>
